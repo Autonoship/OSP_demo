@@ -20,7 +20,8 @@ If failed with a "Werror" flag, turn off the Werror by:
 
 
 ## 3. Build the demo
-After installing the FMI library and libcosim, the demo is ready for run. Make changes in the CMakeLists.txt to set the correct path to the libcosim and FMI library. Build and run the demo by:
+After installing the FMI library and libcosim, the demo is ready for run. Make changes in the CMakeLists.txt to set the correct path to the libcosim and FMI library. Make changes to the src/cpp_demo.cpp to set the correct path to _OSP_simulation_demo_.
+Build and run the demo by:
     
     cd cpp_demo
     mkdir build
