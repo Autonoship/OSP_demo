@@ -18,7 +18,7 @@ int main() {
   
   // load config
   std::cout << "Loading OSP config ......" << std::endl;
-  const std::string path = "/home/chuanhui/research/autonoship/Open_Simulation_Platform/my_demo/OspSystemStructure.xml";
+  const std::string path = "/your/path/to/OSP_simulation_demo/OspSystemStructure.xml";
   const auto uriResolver = cosim::default_model_uri_resolver();
   const cosim::osp_config config = cosim::load_osp_config(path, *uriResolver);
 
@@ -34,12 +34,12 @@ int main() {
   // add observer
   // cosim::file_observer observer("/home/chuanhui/research/autonoship/Open_Simulation_Platform/my_demo/log");
   // cosim::simulator_index target_simulator_index = index_maps.simulators.at("ship_dynamics");
-  exe.add_observer(std::make_shared<cosim::file_observer>("/home/chuanhui/research/autonoship/Open_Simulation_Platform/my_demo/log"));
+  exe.add_observer(std::make_shared<cosim::file_observer>("/your/path/to/OSP_simulation_demo/log"));
   std::cout << "Successfully added file observer!" << std::endl;
   
   
   // load scenario
-  load_scenario(exe, "/home/chuanhui/research/autonoship/Open_Simulation_Platform/my_demo/scenarios/autopilot_test_scenario.json", cosim::to_time_point(0.0));
+  load_scenario(exe, "/your/path/to/OSP_simulation_demo/scenarios/autopilot_test_scenario.json", cosim::to_time_point(0.0));
   exe.simulate_until(cosim::to_time_point(1200.0)).get();
   
   return 0;
