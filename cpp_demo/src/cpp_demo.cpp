@@ -32,7 +32,6 @@ int main() {
   std::cout << "Successfully created execution!" << std::endl;
   
   // add observer
-  // cosim::file_observer observer("/home/chuanhui/research/autonoship/Open_Simulation_Platform/my_demo/log");
   // cosim::simulator_index target_simulator_index = index_maps.simulators.at("ship_dynamics");
   exe.add_observer(std::make_shared<cosim::file_observer>("/your/path/to/OSP_simulation_demo/log"));
   std::cout << "Successfully added file observer!" << std::endl;
