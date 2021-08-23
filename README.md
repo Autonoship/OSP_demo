@@ -1,4 +1,4 @@
-# OSP_demo Installation Guide (Under construction)
+# OSP_demo Installation Guide
 This is a demo of running FMU based simulation with libcosim. If you are looking for the ROS-OSP simulation, please look at (under construction). For more information about OSP, please look at https://opensimulationplatform.com/. To run the demo, you just need to install the FMI_library and libcosim. However, it is recommended to install the command line tool (https://github.com/open-simulation-platform/cosim-cli) and the cosim demo web app (https://github.com/open-simulation-platform/cosim-demo-app).
 
 ## 1. Install FMI library
